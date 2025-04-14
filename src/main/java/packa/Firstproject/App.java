@@ -15,5 +15,6 @@ public class App
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
         driver.quit();
+        driver.close();
     }
 }
