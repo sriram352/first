@@ -14,7 +14,6 @@ public class App
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.flipkart.com");
         driver.manage().window().maximize();
-        driver.quit();
-        
+        driver.get("https://www.amazon.com");
     }
 }
