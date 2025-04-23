@@ -48,7 +48,7 @@ public Landingpage start() throws IOException, InterruptedException {
 }
 @AfterTest
 public void wsait() {
-	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 }
 
 }
