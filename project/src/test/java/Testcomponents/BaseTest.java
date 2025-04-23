@@ -40,7 +40,7 @@ public void driverinit() throws IOException {
     }
 }
 @BeforeTest
-public Landingpage start() throws IOException {
+public Landingpage start() throws IOException, InterruptedException {
 	driverinit();
 	Lp =new Landingpage(driver);
 	Lp.gotologin(); 
