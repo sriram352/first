@@ -27,10 +27,11 @@ public class Landingpage {
     public void gotologin() throws InterruptedException {
     	driver.get("https://rahulshettyacademy.com/client/");
     	driver.manage().window().maximize();
+    	 Thread.sleep(5000);
         email.sendKeys("srinivas.51423@gmail.com");
         pass.sendKeys("Srinivasrahul5$");  
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-        Thread.sleep(5000);
+       
         log.click();
         
         
