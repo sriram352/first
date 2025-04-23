@@ -10,5 +10,6 @@ public class Standalonetest extends BaseTest{
 @Test
 public void run() {
 Lp.gotologin();
+
 }
 }

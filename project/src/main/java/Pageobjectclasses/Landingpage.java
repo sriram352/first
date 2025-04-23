@@ -1,5 +1,7 @@
 package Pageobjectclasses;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +29,9 @@ public class Landingpage {
     	driver.manage().window().maximize();
         email.sendKeys("srinivas.51423@gmail.com");
         pass.sendKeys("Srinivasrahul5$");  
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         log.click();
+        
         
     }
 
