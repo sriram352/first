@@ -6,6 +6,7 @@
       <class name="Tests.Standalonetest">
         <methods>
           <include name="run"/>
+          <include name="wsait"/>
           <include name="start"/>
         </methods>
       </class> <!-- Tests.Standalonetest -->

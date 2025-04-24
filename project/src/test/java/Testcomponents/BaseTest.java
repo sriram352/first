@@ -2,6 +2,7 @@ package Testcomponents;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -39,15 +40,15 @@ public void driverinit() throws IOException {
     }
 }
 @BeforeTest
-public Landingpage start() throws IOException {
+public Landingpage start() throws IOException, InterruptedException {
 	driverinit();
 	Lp =new Landingpage(driver);
 	Lp.gotologin(); 
 	return Lp;
 }
 @AfterTest
-public void close() {
-	driver.quit();
+public void wsait() {
+	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 }
 
 }
