@@ -45,6 +45,7 @@ public Landingpage start() throws IOException, InterruptedException {
 	Lp =new Landingpage(driver);
 	Lp.gotologin(); 
 	return Lp;
+	//automation code//
 }
 
 }
