@@ -46,9 +46,5 @@ public Landingpage start() throws IOException, InterruptedException {
 	Lp.gotologin(); 
 	return Lp;
 }
-@AfterTest
-public void wsait() {
-	//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-}
 
 }
